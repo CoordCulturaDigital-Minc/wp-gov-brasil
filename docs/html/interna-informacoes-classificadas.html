@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="pt-br" dir="ltr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br" dir="ltr"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Portal Modelo - interface 1.0</title>
+	<!-- <base href="" /> -->
+	<meta name="keywords" content="" />
+	<meta name="author" content="Joomla Calango - Joomla User Group Oficial" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+	<meta name="generator" content="Joomla! - Open Source Content Management" />
+	<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" type='text/css'/>
+	<link rel="stylesheet" href="../css/template-verde.css" type='text/css'/>		
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" type='text/css'/>
+	<!--[if lt IE 10]><link rel="stylesheet" href="../css/ie.css" /><![endif]-->
+	<!--[if lt IE 9]><link rel="stylesheet" href="../css/ie8.css" /><![endif]-->
+	<!--[if lt IE 8]><link rel="stylesheet" href="../css/ie7.css" /><link rel="stylesheet" href="../font-awesome/css/font-awesome-ie7.min.css" /><![endif]-->
+	<!-- chamada de fontes local --><!-- <link rel="stylesheet" href="../css/fontes.css" type='text/css'/>		 -->
+	<!-- chamada de fontes externas --><link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,800,700' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="../jplayer/skin/portalpadrao01/jplayer.css" type='text/css'/>	
+</head>
+<body>
+	<a class="hide" id="topo" href="#accessibility">Ir direto para menu de acessibilidade.</a>
+	<noscript>
+	  <div class="error minor-font">
+        Seu navegador de internet está sem suporte à JavaScript. Por esse motivo algumas funcionalidades do site podem não estar acessíveis.
+      </div>
+	</noscript>
+	<!--[if lt IE 7]><center><strong>Atenção, a versão de seu navegador não é compatível com este sítio. Atualize seu navegador.</strong></center><![endif]-->
+	<!-- barra do governo -->
+	<div id="barra-brasil">
+		<a href="http://brasil.gov.br" title="Acesse para conhecer todos os serviços e informações do Governo Brasileiro na Internet.">Portal do Governo Brasileiro</a>		
+    </div>
+    <!-- fim barra do governo -->
+    <div class="layout">
+    	<header>
+    		<div class="container"> 
+	    		<div class="row-fluid accessibility-language-actions-container">    			   			
+					<div class="span6 accessibility-container">
+						<ul id="accessibility">
+							<li>
+								<a accesskey="1" href="#content" id="link-conteudo">
+									Ir para o conte&uacute;do
+									<span>1</span>
+								</a>
+							</li>
+							<li>
+								<a accesskey="2" href="#navigation" id="link-navegacao">
+									Ir para o menu
+									<span>2</span>
+								</a>
+							</li>
+							<li>
+								<a accesskey="3" href="#portal-searchbox" id="link-buscar">
+									Ir para a busca
+									<span>3</span>
+								</a>
+							</li>
+							<li>
+								<a accesskey="4" href="#footer" id="link-rodape">
+									Ir para o rodap&eacute;
+									<span>4</span>
+								</a>
+							</li>
+						</ul>						
+					</div>
+					<!-- fim div.span6 -->
+					<div class="span6 language-and-actions-container">
+						<!-- Descomente para inserir menu de exemplo de idiomas no topo -->
+						<!-- <ul id="language" class="pull-right">
+							<li class="language-en">
+								<a href="#">EN</a>
+							</li>
+							<li class="language-es">
+								<a href="#">ES</a>
+							</li>
+						</ul>	 -->				
+						<ul id="portal-siteactions" class="pull-right">
+							<li>
+								<a accesskey="5" href="interna-acessibilidade.html">Acessibilidade</a>
+							</li>
+							<li>
+								<a accesskey="6" href="#" class="toggle-contraste">Alto Contraste</a>
+							</li>
+							<li>
+								<a accesskey="7" href="#">Mapa do Site</a>
+							</li>
+						</ul>
+					</div>
+					<!-- fim div.span6 -->    
+				</div>
+				<!-- fim .row-fluid -->
+				<div class="row-fluid">
+					<div id="logo" class="span8">
+					<!-- <div id="logo" class="span8 big"> <div id="logo" class="span8 small"> -->
+						<a href="index.html" title="Descrição do Portal Padrão">							
+							<span class="portal-title-1">Denominação do órgão</span>
+							<h1 class="portal-title corto">Nome principal</h1>
+							<span class="portal-description">Subordinação</span>
+						</a>
+					</div>
+					<!-- fim .span8 -->
+					<div class="span4">					
+						<div id="portal-searchbox" class="row">
+							<form action="#" class="pull-right">
+								<fieldset>
+									<legend class="hide">Busca</legend>
+									<h2 class="hidden">Buscar no portal</h2>
+									<div class="input-append">
+										<label for="portal-searchbox-field" class="hide">Busca: </label>
+										<input type="text" id="portal-searchbox-field" class="searchField" placeholder="Buscar no portal" title="Buscar no portal" name="searchterm">		
+										<button type="button" class="btn searchButton"><span class="hide">Buscar</span><i class="icon-search"></i></button>
+									</div>									
+								</fieldset>
+							</form>
+						</div>
+						<!-- fim div#portal-searchbox.row -->
+						<div id="social-icons" class="row">
+							<h2 class="hidden">Redes Sociais</h2>
+							<ul class="pull-right">
+								<li class="portalredes-item"><a title="Twitter" href="https://twitter.com/twitter">
+									<i class="icon-twitter-sign"><span>Twitter</span></i></a>
+	    						</li>
+	    						<li class="portalredes-item"><a title="YouTube" href="http://youtube.com/youtube">
+	    							<i class="icon-youtube"><span>Youtube</span></i></a>
+	    						</li>
+	    						<li class="portalredes-item"><a title="Facebook" href="http://facebook.com/facebook">
+	    							<i class="icon-facebook-sign"><span>Facebook</span></i></a>
+	    						</li>
+	    						<li class="portalredes-item"><a title="Flickr" href="http://flickr.com/flickr">
+	    							<i class="icon-flickr"><span>Flickr</span></i></a>
+	    						</li>
+							</ul>
+						</div>
+						<!-- fim div#social-icons.row -->
+					</div>
+					<!-- fim .span4 -->
+				</div>
+				<!-- fim .row-fluid -->
+			</div>
+			<!-- fim div.container -->
+			<div class="sobre">
+				<div class="container">
+					<nav class="menu-servicos pull-right">
+						<h2 class="hide">Serviços</h2>
+						<ul>
+							<li class="portalservicos-item">
+								<a title="Perguntas frequentes" href="interna-perguntas-frequentes.html">Perguntas frequentes</a>
+							</li>
+							<li class="portalservicos-item">
+								<a title="Contato" href="#">Contato</a>
+							</li>
+							<li class="portalservicos-item">
+								<a title="Serviços da [Denominação]" href="#">Serviços da [Denominação]</a>
+							</li>
+							<li class="portalservicos-item">
+								<a title="Dados abertos" href="#">Dados abertos</a>
+							</li>
+							<li class="portalservicos-item">
+								<a title="Área de imprensa" href="#">Área de imprensa</a>
+							</li>
+						</ul>
+						<span class="hide">Fim do menu de serviços</span>
+					</nav>
+					<!-- fim #menu-servicos.pull-right -->
+				</div>
+				<!-- .container -->
+			</div>
+			<!-- fim .sobre -->			
+    	</header>
+		<main> 
+    		<div class="container">
+				<div class="row-fluid">
+	                <section class="rastro-navegacao">
+	                        <div class="rastro-navegacao row-flutuante">
+	                                <a class="pathway" href="index.html">Página inicial</a>
+	                                <span class="separator"> &gt; </span>
+	                                <span>Informações classificadas</span>
+	                        </div>
+	                </section>
+				</div>
+				<!-- fim .row-fluid -->
+				<div class="row-fluid">
+					<div id="navigation" class="span3">
+						<a href="#" class="visible-phone visible-tablet mainmenu-toggle btn"><i class="icon-list"></i>&nbsp;Menu</a>
+						<section id="navigation-section">							
+							<span class="hide">Início do menu principal</span>
+							<nav class="menu-de-apoio span9">
+								<h2 class="hide">Temas relevantes</h2>
+								<ul>
+									<li><a href="interna-de-noticias.html" title="Conheça a identidade digital do governo">Conheça a identidade digital do governo</a></li>									
+								</ul>							
+							</nav>
+							<nav class="span9 assuntos">
+								<h2>Assuntos <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>
+								<ul>
+									<li><a href="#" title="Editoria A">Editoria A</a></li>
+									<li><a href="#" title="Editoria B">Editoria B</a></li>
+									<li><a href="#" title="Editoria C">Editoria C</a></li>								
+									<li><a href="#" title="Editoria D">Editoria D</a></li>								
+									<li><a href="#" title="Editoria E">Editoria E</a></li>								
+									<li><a href="#" title="Editoria F">Editoria F</a></li>								
+									<li><a href="#" title="Editoria G">Editoria G</a></li>								
+									<li><a href="#" title="Editoria H">Editoria H</a></li>								
+									<li><a href="#" title="Editoria I">Editoria I</a></li>								
+									<li><a href="#" title="Editoria J">Editoria J</a></li>								
+								</ul>
+							</nav>
+							<nav class="span9 sobre">
+								<h2>Sobre <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>
+								<ul>
+									<li><a href="#" title="Institucional">Institucional</a></li>
+									<li><a href="#" title="Ações e Programas">Ações e Programas</a></li>
+									<li><a href="#" title="Auditorias">Auditorias</a></li>
+									<li><a href="#" title="Convênios">Convênios</a></li>								
+									<li><a href="#" title="Despesas">Despesas</a></li>								
+									<li><a href="#" title="Licitações e Contratos">Licitações e Contratos</a></li>							
+									<li><a href="#" title="Servidores">Servidores</a></li>								
+									<li><a href="interna-informacoes-classificadas.html" title="Informações classificadas">Informações classificadas</a></li>
+									<li><a href="#" title="Serviço de Informação ao Cidadão - SIC">Serviço de Informação ao Cidadão - SIC</a></li>
+									<li><a href="interna-perguntas-frequentes.html" title="Perguntas frequentes">Perguntas frequentes</a></li>
+								</ul>
+							</nav>	
+							<nav class="span9 central-conteudos">
+								<h2>Central de Conteúdos <i class="icon-chevron-down visible-phone visible-tablet pull-right"></i></h2>
+								<ul>
+									<li><a href="#" class="imagens" title="Imagens">
+										<span class="icon-li icon-stack">
+										  <i class="icon-circle icon-stack-base"><span class="hide">&nbsp;</span></i>
+										  <i class="icon-picture icon-light"><span class="hide">&nbsp;</span></i>
+										</span>
+										Imagens</a>
+									</li>
+									<li><a href="#" class="videos" title="Vídeos">
+										<span class="icon-li icon-stack">
+										  <i class="icon-circle icon-stack-base"><span class="hide">&nbsp;</span></i>
+										  <i class="icon-play icon-light"><span class="hide">&nbsp;</span></i>
+										</span>
+										Vídeos</a>
+									</li>
+									<li><a href="#" class="audios" title="Áudios">
+										<span class="icon-li icon-stack">
+										  <i class="icon-circle icon-stack-base"><span class="hide">&nbsp;</span></i>
+										  <i class="icon-volume-up icon-light"><span class="hide">&nbsp;</span></i>
+										</span>
+										Áudios</a>
+									</li>
+									<li><a href="#" class="publicacoes" title="Publicações">
+										<span class="icon-li icon-stack">
+										  <i class="icon-circle icon-stack-base"><span class="hide">&nbsp;</span></i>
+										  <i class="icon-file-text icon-light"><span class="hide">&nbsp;</span></i>
+										</span>
+										Publicações</a>
+									</li>
+									<li><a href="#" class="aplicativos" title="Aplicativos">
+										<span class="icon-li icon-stack">
+										  <i class="icon-circle icon-stack-base"><span class="hide">&nbsp;</span></i>
+										  <i class="icon-mobile-phone icon-light"><span class="hide">&nbsp;</span></i>
+										</span>
+										Aplicativos</a>
+									</li>
+									<!-- descomentar de acordo com necessidade do orgao -->
+									<!-- <li><a href="#" class="infograficos" title="Imagens">
+										<span class="icon-li icon-stack">
+										  <i class="icon-circle icon-stack-base"><span class="hide">&nbsp;</span></i>
+										  <i class="icon-columns icon-light"><span class="hide">&nbsp;</span></i>
+										</span>
+										Infográficos</a>
+									</li>
+									<li><a href="#" class="estatisticas" title="Estatísticas">
+										<span class="icon-li icon-stack">
+										  <i class="icon-circle icon-stack-base"><span class="hide">&nbsp;</span></i>
+										  <i class="icon-bar-chart icon-light"><span class="hide">&nbsp;</span></i>
+										</span>
+										Estatísticas</a>
+									</li>			 -->													
+								</ul>
+							</nav>	
+							<span class="hide">Fim do menu principal</span>
+						</section>					
+					</div>
+					<!-- fim #navigation.span3 -->
+					<div id="content" class="internas span9">
+						<section id="content-section">							
+							<span class="hide">Início do conteúdo da página</span>
+							<!--  		CONTEUDO   	---------- -->
+							<h1 class="documentFirstHeading">
+							   Informações classificadas
+							</h1>		
+							<div class="content-header-options-1 row-fluid">
+								<div class="documentByLine span7">
+									<span class="documentAuthor">por <strong>Portal padrão</strong></span>
+									<span class="separator">|</span>
+									<span class="documentPublished"><strong>publicado</strong> 22/07/2013 09h56</span>
+									<span class="separator">|</span>
+									<span class="documentModified"><strong>última modificação</strong> 10/10/2013 10h33</span>
+								</div>
+								<div class="btns-social-like span5 hide">
+									<div class="pull-left googleplus">
+										<!-- botão google plus -->
+										<div class="g-plusone" data-size="medium" data-annotation="bubble"></div>
+										<script type="text/javascript">
+										  window.___gcfg = {lang: 'pt-BR'};
+										  (function() {
+										    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+										    po.src = 'https://apis.google.com/js/plusone.js';
+										    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+										  })();
+										</script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+										<!-- fim botão google plus -->	
+									</div>
+									<div class="pull-left twitter">
+										<!-- botão twitter -->
+										<a href="https://twitter.com/share" class="twitter-share-button" data-via="portalbrasil" data-lang="pt">Tweetar</a>
+										<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+										<!-- fim botão twitter -->	
+									</div>
+									<div class="pull-left facebook">
+										<!-- botão facebook -->
+										<div class="fb-like" data-href="http://www.brasil.gov.br" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+										<div id="fb-root"></div>
+										<script>(function(d, s, id) {
+										  var js, fjs = d.getElementsByTagName(s)[0];
+										  if (d.getElementById(id)) return;
+										  js = d.createElement(s); js.id = id;
+										  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=509544779073047";
+										  fjs.parentNode.insertBefore(js, fjs);
+										}(document, 'script', 'facebook-jssdk'));</script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+										<!-- fim botão facebook -->	
+									</div>				
+								</div>
+							</div>
+							<!-- fim .content-header-options-1 -->
+							<div class="description">
+								<p>Nesta seção são divulgados o rol das informações classificadas em cada grau de sigilo e o rol das informações desclassificadas nos últimos doze meses no âmbito do [nome do órgão ou entidade].</p>
+							</div>
+
+							<blockquote class="right"><a target="_self" href="http://portalpadrao.plone.org.br/sobre/wireframes/wireframe_pagina_informacoes-classificadas.jpg" title="">Acesse o wireframe com o exemplo de uma página de Informações classificadas</a></blockquote>
+							<blockquote class="right">Acesse uma página de Informações classificadas já publicada (em breve)</blockquote>
+							<blockquote class="right"><a target="_self" href="http://portalpadrao.plone.org.br/sobre/wireframes/como-montar-sua-pagina.zip" title="">Saiba como montar suas páginas. Baixe o wireframe</a></blockquote>
+
+							<p>O novo item de navegação &quot;Informações classificadas&quot; deverá trazer um texto explicativo sobre o seu objetivo de atender aos incisos I e II, do Art. 45, do <a href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/Decreto/D7724.htm" target="_self" title="">Decreto nº 7.724/2012</a>.</p>
+
+							<p>A página deverá conter duas áreas específicas para a apresentação das listagens requeridas, com as seguintes nomenclaturas:</p>
+							<ul>
+								<li>Rol de informações classificadas</li>
+								<li>Rol de informações desclassificadas</li>
+							</ul>	
+
+							<p><strong>Conteúdo da área &quot;rol de informações desclassificadas&quot;</strong></p>
+							<p>Essa área deverá conter os Números Únicos de Protocolo (NUP) de todos os documentos desclassificados desde a entrada em vigor da Lei de Acesso à Informação.</p>
+							<p><strong>Conteúdo da área &quot;rol de informações classificadas&quot;</strong></p>
+							<p><strong></strong>O conteúdo dessa área deverá apresentar as seguintes informações:</p>
+
+							<ul>
+								<li>Código de Indexação de Documento que contém Informação Classificada – CIDIC;</li>	
+								<li>Categoria na qual se enquadra a informação;</li>
+								<li>Indicação do dispositivo legal que fundamenta a classificação;</li>
+								<li>Data da produção da informação;</li>
+								<li>Data da classificação;</li>
+								<li>Prazo da classificação.</li>
+							</ul>
+
+							<p>Somente devem ser incluídas no &quot;Rol de informações classificadas&quot; as informações classificadas nos termos do §1º do art. 24 da <a href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm" target="_self" title="">Lei nº 12.527/2011</a>, ou seja, como reservadas, secretas ou ultrassecretas. Por isso, informações cujo sigilo seja devido a outras legislações (como fiscal e tributária), documentos preparatórios e informações pessoais não estão sujeitos aos termos de divulgação apresentados neste guia.</p>
+
+							<p><strong>a) Formato de apresentação do CIDIC</strong></p>
+							<p>O formato de apresentação do Código de Indexação de Documento que contém Informação Classificada<br>(CIDIC) obedece às seguintes regras, de acordo com os artigos 50 a 54 do <a href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/Decreto/D7845.htm" target="_self" title="">Decreto nº 7.845/2012</a>:</p>
+
+							<ol>
+								<li>A 1&ordf; parte do CIDIC corresponde ao Número Único de Protocolo – NUP do documento que contém a informação. Este é um código exclusivamente numérico;</li>
+								<li>A 2&ordf; parte do CIDIC, separada da 1&ordf; parte por um &quot;.&quot;, iniciará sempre por um caractere alfabético (&quot;U&quot;, &quot;S&quot; ou &quot;R&quot;), de acordo com o grau de sigilo. Além disso, deve prever até o máximo de 39 posições, com caracteres alfanuméricos e separadores;</li>
+								<li>Os separadores utilizados serão: &quot;.&quot; e &quot;/&quot; (este último, para as datas);</li>
+								<li>Para as informações classificadas no grau reservado e secreto, a 2&ordf; parte do CIDIC terá sempre 28 posições com caracteres alfanuméricos e separadores;</li>
+								<li>Para as informações classificadas no grau ultrassecreto, a 2&ordf; parte do CIDIC terá 28 posições com <span>caracteres alfanuméricos e separadores, enquanto não ocorrer prorrogação do prazo do sigilo;</li>
+								<li>Quando ocorrer a prorrogação do prazo de sigilo da informação classificada no grau ultrassecreto, </span><span>a nova data deverá constar no final da 2&ordf; parte do CIDIC, totalizando 39 posições com caracteres </span><span>alfanuméricos e separadores;</li>
+							</ol>
+
+							<p><strong>b) Categoria na qual se enquadra a informação</strong></p>
+							<p>A divulgação da informação &quot;categoria na qual se enquadra a informação&quot; deve obedecer os padrões estabelecidos no Vocabulário Controlado de Governo Eletrônico – VCGE (Anexo II do Decreto 7.845/2012). Trata-se de um padrão criado para facilitar e uniformizar a classificação dos tipos de informações tratadas em todo o Governo Federal.<br><br>Para consultar o VCGE, acesse: <a href="http://vocab.e.gov.br/2011/03/vcge#esquema">http://vocab.e.gov.br/2011/03/vcge#esquema</a> Deve-se utilizar apenas o primeiro nível do Vocabulário.</p>
+
+							<p><strong>c) Fundamentação legal da classificação</strong></p>
+							<p>Para indicar a fundamentação legal da classificação, deve-se fazer referência ao inciso do artigo 23 da <a href="http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm" target="_self" title="">Lei nº 12.527/2011</a> utilizado como justificativa para a classificação da informação.</p>
+							
+							<p><strong>d) Formato para publicação das listagens</strong></p>
+							<p><strong></strong>A disponibilização das listagens deve observar o disposto no artigo 8º, parágrafo 3, inciso II, da <a href="http://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2011/Lei/L12527.htm" target="_self" title="">Lei de Acesso à Informação</a>, ou seja, as informações devem ser publicadas em formatos &quot;abertos e não proprietários, tais como planilhas e texto, de modo a facilitar a análise das informações&quot;. Também devem ser observados os padrões estabelecidos pela e-PING - Padrões de Interoperabilidade de Governo Eletrônico. O formato (como, por exemplo, html, csv, ods, etc.) a ser utilizado pode ser definido pelo próprio órgão ou entidade, considerando as normas e procedimentos internos de segurança da informação.</p>
+							
+							<p><strong>Guias</strong></p>
+							<p>Para mais informações sobre a seção de Acesso à Informação, confira os guias elaborados pela Controladoria-Geral da União.</p>
+							<p><a href="http://www.acessoainformacao.gov.br/acessoainformacaogov/espaco-gestor/arquivos/Guia_SecaoSitios.pdf" target="_self" title="">Guia para criação da seção de acesso à informação nos portais eletrônicos dos órgãos e entidades federais</a> (arquivo pdf)</p>
+							<p><a href="http://www.cgu.gov.br/Publicacoes/BrasilTransparente/Guia_TransparenciaAtiva_EstadosMunicipios.pdf" target="_self" title="">Guia para criação da Seção de Acesso à Informação nos portais eletrônicos dos Órgãos e Entidades Estaduais e Municipais</a> (arquivo pdf)</p>
+							<p><a href="http://www.acessoainformacao.gov.br/acessoainformacaogov/espaco-gestor/arquivos/Guia_InformacoesClassificadas.pdf" target="_self" title="">Publicação do rol de informações classificadas e desclassificadas e de relatórios estatísticos sobre a Lei de Acesso à Informação</a> (arquivo pdf)</p>
+							
+							<div class="below-content">
+								<div class="line">
+									registrado em:
+									<span>
+										<a href="#" class="link-categoria" rel="tag">Lei de Acesso à Informação</a><span class="separator">,</span>
+									</span>
+									<span>
+										<a href="#" class="link-categoria" rel="tag">LAI</a><span class="separator">,</span>
+									</span>
+									<span>
+									<a href="http://portalpadrao.plone.org.br/@@search?Subject%3Alist=Perguntas%20Frequentes" class="link-categoria" rel="tag">Perguntas Frequentes</a>
+									</span>
+								</div>
+								<div class="line">
+									Assunto(s):
+									<span>
+										<a href="#" class="link-categoria">Internet</a>
+										<span class="separator">,</span>
+									</span>
+									<span>
+										<a href="#" class="link-categoria">Comunicação</a>
+									</span>
+								</div>
+							</div>
+							<!-- fim .below-content -->
+
+							<!--  		CONTEUDO  FINAL      	---------- -->
+							<span class="hide">Fim do conteúdo da página</span>							
+						</section>
+					</div>
+					<!-- fim #content.span9 -->
+				</div>
+				<!-- fim .row-fluid -->
+			</div>
+			<!-- fim .container -->
+		</main>
+    	<footer>
+    		<div class="footer-atalhos">
+    			<div class="container">
+    				<div class="pull-right voltar-ao-topo"><a href="#portal-siteactions"><i class="icon-chevron-up"></i>&nbsp;Voltar para o topo</a></div>
+    			</div>
+    		</div>
+    		<div class="container container-menus">
+    			<div id="footer" class="row footer-menus">
+    				<span class="hide">Início da navegação de rodapé</span>
+    				<div class="span3">
+						<nav class="row assuntos nav">
+							<h2>Assuntos</h2>
+							<ul>
+								<li><a href="#" title="Editoria A">Editoria A</a></li>
+								<li><a href="#" title="Editoria B">Editoria B</a></li>
+								<li><a href="#" title="Editoria C">Editoria C</a></li>								
+							</ul>
+						</nav>    					
+    				</div>
+					<div class="span3">
+						<nav class="row servicos nav">
+							<h2>Serviços</h2>
+							<ul>
+								<li class="portalservicos-item">
+									<a title="Perguntas frequentes" href="#">Perguntas frequentes</a>
+								</li>
+								<li class="portalservicos-item">
+									<a title="Contato" href="#">Contato</a>
+								</li>
+								<li class="portalservicos-item">
+									<a title="Serviços da [Denominação]" href="#">Serviços da [Denominação]</a>
+								</li>
+								<li class="portalservicos-item">
+									<a title="Dados abertos" href="#">Dados abertos</a>
+								</li>
+								<li class="portalservicos-item">
+									<a title="Área de imprensa" href="#">Área de imprensa</a>
+								</li>
+							</ul>
+						</nav>							
+					</div>
+					<div class="span3">
+						<nav class="row redes-sociais nav">
+							<h2>Redes Sociais</h2>
+							<ul>
+								<li class="portalredes-item"><a title="Twitter" href="https://twitter.com/twitter">
+	    							Twitter</a>
+	    						</li>
+	    						<li class="portalredes-item"><a title="YouTube" href="http://youtube.com/youtube">
+	    							Youtube</a>
+	    						</li>
+	    						<li class="portalredes-item"><a title="Facebook" href="http://facebook.com/facebook">
+	    							Facebook</a>
+	    						</li>
+	    						<li class="portalredes-item"><a title="Flickr" href="http://flickr.com/flickr">
+	    							Flickr</a>
+	    						</li>
+							</ul>
+						</nav>						
+					</div>
+					<div class="span3">
+						<nav class="row rss nav">
+							<h2>RSS</h2>
+							<ul>
+								<li><a href="#" title="O que é?">O que é?</a></li>
+								<li><a href="#" title="Assine">Assine</a></li>
+							</ul>
+						</nav>
+						<nav class="row sobre nav">
+							<h2>Sobre o site</h2>
+							<ul>
+								<li><a href="#">Acessibilidade</a></li>
+								<li><a href="#">Mapa do site</a></li>
+								<li><a href="#">Versión en Español - Versão em Espanhol</a></li>
+								<li><a href="#">English version - Versão em Inglês</a></li>
+							</ul>
+						</nav>
+					</div>
+					<span class="hide">Fim da navegação de rodapé</span>					
+    			</div>
+    			<!-- fim .row -->
+    		</div>
+    		<!-- fim .container -->
+			<div class="footer-logos">
+				<div class="container">
+					<a href="http://www.acessoainformacao.gov.br/" class="logo-acesso pull-left"><img src="../images/gov-bar/acesso-a-informacao.png" alt="Acesso a Informação"></a>
+					<!-- separador para fins de acessibilidade --><span class="hide">&nbsp;</span><!-- fim separador para fins de acessibilidade -->
+					<a href="http://www.brasil.gov.br/" class="brasil pull-right"><img src="../images/gov-bar/brasil.png" alt="Brasil - Governo Federal"></a>
+				</div>				
+			</div>
+			<div class="footer-ferramenta">
+				<div class="container">
+					<p>Interface preparada para desenvolvimento com o CMS <a href="http://www.joomla.org">Joomla</a></p>		
+				</div>				
+			</div>
+    		<div class="footer-atalhos visible-phone">
+    			<div class="container">
+    				<span class="hide">Fim do conteúdo da página</span>
+    				<div class="pull-right voltar-ao-topo"><a href="#portal-siteactions"><i class="icon-chevron-up"></i>&nbsp;Voltar para o topo</a></div>
+    			</div>
+    		</div>
+    	</footer>		
+    </div>
+	<!-- fim div#wrapper -->	
+	<!-- scripts principais -->	
+	<script src="../js/jquery.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+	<script src="../js/jquery-noconflict.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+	<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+	<script src="../js/jquery.cookie.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+	<script src="../js/template.js" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+	<!-- Script do portal Brasil deve ficar preferencialmente no rodape para nao atrasar o carregamento da pagina principal -->
+	<script src="http://barra.brasil.gov.br/barra.js?cor=verde" type="text/javascript"></script><noscript>&nbsp;<!-- item para fins de acessibilidade --></noscript>
+</body>
+</html>

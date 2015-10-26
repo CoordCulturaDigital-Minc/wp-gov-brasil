@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+         <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   
+        <script src="../js/jquery-cookie.js"></script>
+        <script src="../js/banner.js"></script>
+        <script src="../js/script.js"></script>
+
+        <link media="all" href="../css/font-awesome.min.css" type="text/css" rel="stylesheet">
+        <link media="all" href="../css/base.css" type="text/css" rel="stylesheet">
+        <link media="all" href="../css/main.css" type="text/css" rel="stylesheet">
+        <link media="all" href="../css/style_blue.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body dir="ltr" class="template-view portaltype-collective-cover-content">
+
+        <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"> 
+            <ul id="menu-barra-temp" style="list-style:none;">
+                <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"><a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a></li> 
+                <li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
+            </ul>
+        </div>
+
+        <div id="wrapper">
+
+            <!-- HEADER -->
+            <div id="header" role="banner">
+                <div>
+                    <ul id="accessibility">
+                        <li><a accesskey="1" href="#acontent" id="link-conteudo">Ir para o conteúdo<span>1</span></a></li>
+                        <li><a accesskey="2" href="#anavigation" id="link-navegacao">Ir para o menu<span>2</span></a></li>
+                        <li><a accesskey="3" href="#SearchableText" id="link-buscar">Ir para a busca<span>3</span></a></li>
+                        <li class="last-item"><a accesskey="4" href="#afooter" id="link-rodape">Ir para o rodapé<span>4</span></a></li>
+                    </ul>
+
+                    <!--
+                    <ul id="language">
+                    <li class="language-es">
+                    <a href="#">Espa&#241;ol</a>
+                    </li>
+                    <li class="language-en">
+                    <a href="#">English</a>
+                    </li>
+                    </ul>
+
+                    -->
+                    
+                    <ul id="portal-siteactions">
+                        <li id="siteaction-accessibility"><a href="#" title="Acessibilidade" accesskey="5">Acessibilidade</a></li>
+                        <li id="siteaction-contraste"><a href="#" title="Alto Contraste" accesskey="6">Alto Contraste</a></li>
+                        <li id="siteaction-mapadosite" class="last-item"><a href="#" title="Mapa do Site" accesskey="7">Mapa do Site</a></li>
+                    </ul>
+
+                    <div id="logo">
+                        <!-- <a id="portal-logo" title="" href="/">
+                            <span id="portal-title-1">Secretaria de Políticas Culturais</span>
+                            <h1 id="portal-title" class="corto">Cultura Digital</h1>
+                            <span id="portal-description">Ministério da Cultura</span>
+                        </a> -->
+
+                          <a id="portal-logo" title="" href="/">
+
+                            <div id="logo-img">
+                                <img src="../images/temp/logo-cdbr.png">
+                            </div>
+                
+                            <div id="logo-text">
+                                <span id="portal-title-1">Secretaria de Políticas Culturais</span>
+                                <h1 id="portal-title" class="corto">Cultura Digital</h1>
+                                <span id="portal-description">Ministério da Cultura</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div id="portal-searchbox">
+                       <form  role="search" method="get" class="search-form" action="">
+                            <fieldset class="LSBox">
+                                <legend class="hiddenStructure">Buscar no portal</legend>
+                                <label class="hiddenStructure" for="nolivesearchGadget">Buscar no portal</label>
+                                <input type="search" class="searchField" placeholder="Buscar no portal" value="" name="s" title="" />
+                                <input type="submit" class="icon-search icon-large" value="&#xf002;" />
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div id="social-icons">
+                        <ul>
+                            <li id="portalredes-facebooks" class="portalredes-item">
+                                <a href="#" title="Facebook" target="_blank" id="icon-facebook">
+                                    <i class="fa fa-facebook-official"></i>
+                                    <!-- <img src="images/icons/icone-facebook.png" alt="Facebook"> -->
+                                </a>
+                            </li>
+                            <li id="portalredes-twitter" class="portalredes-item">
+                                <a href="#" target="_blank" title="Twitter">
+                                    <i class="fa fa-twitter-square"></i>
+                                    <!-- <img src="images/icons/icone-twitter.png" alt="Twitter"> -->
+                                </a>
+                            </li>
+                            <li id="portalredes-youtube" class="portalredes-item">
+                                <a href="#" target="_blank" title="YouTube">
+                                    <i class="fa fa-youtube-square"></i>
+                                    
+                                    <!-- <img src="images/icons/icone-youtube.png" alt="YouTube"> -->
+                                </a>
+                            </li>
+                            <li id="portalredes-flickr" class="portalredes-item">
+                                <a href="#" target="_blank" title="Flickr">
+                                    <i class="fa fa-flickr"></i>
+                                    <!-- <img src="images/icons/icone-flickr.png" alt="Flickr"> -->
+                                </a>
+                            </li>
+                            <li id="portalredes-instagram" class="portalredes-item">
+                                <a href="#" target="_blank" title="Instagram">
+                                     <i class="fa fa-instagram"></i>
+
+                                    <!-- <img src="images/icons/instagram.png" alt="Instagram"> -->
+                                </a>
+                            </li>     
+                            <li id="portalredes-tumblr" class="portalredes-item">
+                                <a href="#" target="_blank" title="Tumblr">
+                                   <i class="fa fa-tumblr-square"></i>
+                                    <!-- <img src="images/icons/tumblr.png" alt="Tumblr"> -->
+                                </a>
+                            </li>  
+                            <li id="portalredes-rss" class="portalredes-item last-item">
+                                <a href="/rss" target="_self" title="RSS">
+                                    <i class="fa fa-rss-square"></i>
+                                    <!-- <img src="images/icons/rss_branco_menor.png" alt="RSS"> -->
+                                </a>
+                            </li>  
+                        </ul>
+                    </div>
+                </div>
+                <div id="sobre">
+                    <ul>
+                        <li id="portalservicos-perguntas-frequentes" class="portalservicos-item"><a href="#" title="Perguntas frequentes">Perguntas frequentes</a></li>
+                        <li id="portalservicos-contato" class="portalservicos-item"><a href="#" title="Contato">Contato</a></li>
+                        <li id="portalservicos-acesso-a-sistemas" class="portalservicos-item last-item"><a href="#" title="Acesso a Sistemas">Acesso a Sistemas</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- content -->
+
+            <div id="main" role="main">
+
+                <div id="portal-features">
+                    <div id="featured-content">
+                     
+                    </div>
+                </div>
+
+                <div id="site-content">
+
+                    <!-- Demo Plone Content -->
+
+                    <div id="portal-columns" class="row">
+                        <div id="viewlet-above-content">
+                            <div id="portal-breadcrumbs">
+                                <span id="breadcrumbs-you-are-here">Você está aqui:</span>
+                                <span id="breadcrumbs-home"><a href="/">Página Inicial</a></span>
+                            </div>
+                        </div>
+
+                        <!-- Column 1 - sidebar -->
+                        <div id="navigation">
+                            <a name="anavigation" id="anavigation"></a>
+                            <span class="menuTrigger">Menu</span>
+
+                            <div id="portal-column-one" class="cell width-1:4 position-0">
+
+                                <div class="portletWrapper first-item nav-menu-de-relevancia">
+                                    <dl class="portlet portletNavigationTree first-item-nav">
+                                        <dt class="portletHeader">
+                                            <span class="portletTopLeft"></span>
+                                            Menu de relevância
+                                            <span class="portletTopRight"></span>
+                                        </dt>
+                                        <dd class="portletItem lastItem">
+                                            <ul class="navTree navTreeLevel0">
+                                                <li class="navTreeItem visualNoMarker section-orientacoes-gerais">
+                                                    <a href="#" title="" class="state-published contenttype-link">
+                                                        <span>Orientações gerais</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker section-portal-brasil">
+                                                    <a href="http://brasil.gov.br/" title="" class="state-published contenttype-link">
+                                                        <span>Portal Brasil</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker section-portal-do-planalto last-item">
+                                                    <a href="http://www2.planalto.gov.br/" title="" class="state-published contenttype-link">
+                                                        <span>Portal do Planalto</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <span class="portletBottomLeft"></span>
+                                            <span class="portletBottomRight"></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <div class="portletWrapper">
+                                    <dl class="portlet portletNavigationTree">
+                                        <dt class="portletHeader">
+                                            <span class="portletTopLeft"></span>Assuntos<span class="portletTopRight"></span>
+                                        </dt>
+                                        <dd class="portletItem lastItem">
+                                            <ul class="navTree navTreeLevel0">
+                                                <li class="navTreeItem visualNoMarker navTreeItemInPath navTreeFolderish section-editoria-a">
+                                                    <a href="" title="Editoria A" class="state-published navTreeItemInPath navTreeFolderish contenttype-folder">
+                                                    <span>Editoria A</span></a>
+                                                    <ul class="navTree navTreeLevel1">
+
+                                                        <li class="navTreeItem visualNoMarker navTreeItemInPath navTreeFolderish section-segundo-nivel last-item">
+                                                            <a href="" title="" class="state-published navTreeItemInPath navTreeFolderish contenttype-folder"><span>Menu de 2. nivel</span></a>
+                                                            <ul class="navTree navTreeLevel2">
+                                                                <li class="navTreeItem visualNoMarker navTreeCurrentNode navTreeFolderish section-terceiro-nivel last-item">
+                                                                    <a href="" title="" class="state-published navTreeCurrentItem navTreeCurrentNode navTreeFolderish contenttype-folder"><span>Menu de 3. nível</span></a>
+                                                                    
+                                                                    <ul class="navTree navTreeLevel3">
+                                                                        <li class="navTreeItem visualNoMarker section-pagina-2-titulo-do-texto-institucional">
+                                                                            <a href="http://portalpadrao.gov.br/assuntos/editoria-a/segundo-nivel/terceiro-nivel/pagina-2-titulo-do-texto-institucional" title="Espaço para inserir o subtítulo do texto institucional. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres" class="state-published contenttype-document"><span>Página 2: título do texto institucional</span></a>
+                                                                        </li>
+                                                                        <li class="navTreeItem visualNoMarker section-pagina-3-titulo-do-texto-institucional last-item">
+                                                                            <a href="" title="Espaço para inserir o subtítulo do texto institucional. Se em uma linha, usar 90 caracteres. Se em duas linhas usar 190 caracteres" class="state-published contenttype-document"><span>Página 3: título do texto institucional</span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-editoria-b">
+                                                    <a href="" title="" class="state-published navTreeFolderish contenttype-folder"><span>Editoria B</span></a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-editoria-c last-item">
+                                                    <a href="" title="Editoria C" class="state-published navTreeFolderish contenttype-folder">
+                                                    <span>Editoria C</span></a>
+                                                </li>
+                                            </ul><span class="portletBottomLeft"></span>
+                                            <span class="portletBottomRight"></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <div class="portletWrapper">
+                                    <dl class="portlet portletNavigationTree">
+                                        <dt class="portletHeader">
+                                            <span class="portletTopLeft"></span>Atuação
+                                            <span class="portletTopRight"></span>
+                                        </dt>
+                                        <dd class="portletItem lastItem">
+                                            <ul class="navTree navTreeLevel0">
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-comunicacao-digital">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Comunicação Digital</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-canais">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Canais</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-imprensa">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder"><span>Imprensa</span></a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-internacional">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Internacional</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-pesquisa">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Pesquisa</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-eventos">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Eventos</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-patrocinio">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Patrocínio</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-midia">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Mídia</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-publicidade last-item">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Publicidade</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <span class="portletBottomLeft"></span>
+                                            <span class="portletBottomRight"></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <div class="portletWrapper" >
+                                    <dl class="portlet portletNavigationTree">
+                                        <dt class="portletHeader">
+                                            <span class="portletTopLeft"></span>
+                                            Acesso à Informação
+                                            <span class="portletTopRight"></span>
+                                        </dt>
+                                        <dd class="portletItem lastItem">
+                                            <ul class="navTree navTreeLevel0">
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-institucional">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Institucional</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-acoes-e-programas">
+                                                    <a href="#" title="Ações e Programas" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Ações e programas</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-agendas">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                    <span>Agendas</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-auditorias">
+                                                    <a href="#" title="Auditorias" class="state-published navTreeFolderish contenttype-folder">
+                                                    <span>Auditorias</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-convenios">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Convênios</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-despesas">
+                                                    <a href="#" title="Despesas" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Despesas</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-licitacoes-e-contratos">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Licitações e contratos</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-servidores">
+                                                    <a href="#" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Servidores</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker section-informacoes-classificadas-1">
+                                                    <a href="#" title="" class="state-published contenttype-document">
+                                                        <span>Informações Classificadas</span>
+                                                    </a>
+                                                </li>
+                                                <li class="navTreeItem visualNoMarker navTreeFolderish section-servico-de-informacao-ao-cidadao-2013-sic last-item">
+                                                    <a href="" title="" class="state-published navTreeFolderish contenttype-folder">
+                                                        <span>Serviço de Informação ao Cidadão – SIC</span>
+                                                        </a>
+                                                </li>
+                                            </ul>
+                                            <span class="portletBottomLeft"></span>
+                                            <span class="portletBottomRight"></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <div class="portletWrapper">
+                                    <dl class="portlet portletStaticText portlet-static-centrais-de-conteudos">
+                                        <dt class="portletHeader">
+                                            <span class="portletTopLeft"></span>
+                                            <span>Centrais de Conteúdos</span>
+                                            <span class="portletTopRight"></span>
+                                        </dt>
+
+                                        <dd class="portletItem odd">
+                                            <ul class="list-central">
+                                                <li class="item-central item-videos first">
+                                                    <a title="" href="#" class="link-central link-videos internal-link" target="_self">Vídeos</a></li>
+                                                <li class="item-central item-audios">
+                                                    <a title="" href="#" class="link-central link-audios internal-link" target="_self">Áudios</a></li>
+                                                <li class="item-central item-fotos">
+                                                    <a title="" href="#" class="link-central link-fotos internal-link" target="_self">Imagens</a></li>
+                                                <li class="item-central item-publicacoes">
+                                                    <a title="" href="#" class="link-central link-infograficos internal-link" target="_self"> Infográficos</a></li>
+                                                <li class="item-central item-infograficos">
+                                                    <a title="" href="#" class="link-central link-publicacoes internal-link" target="_self">Publicações </a></li>
+                                                <li class="item-central item-dadosabertos">
+                                                    <a class="link-central link-dadosabertos internal-link" href="#" target="_self" title="">Dados Abertos</a></li>
+                                                <li class="item-central item-aplicativos last-item">
+                                                    <a title="" href="#" class="link-central link-aplicativos internal-link" target="_self">Aplicativos </a>
+                                                </li>
+                                            </ul>
+                                            <span class="portletBottomLeft"></span>
+                                            <span class="portletBottomRight"></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="portal-column-content" class="cell width-3:4 position-1:4">
+                            <a name="acontent" id="acontent"></a>
+
+                            <div class="">
+                                <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+                                    <dt>Info</dt>
+                                    <dd></dd>
+                                </dl>
+
+                                <div id="content">
+
+                                    <div id="viewlet-above-content-title"></div>
+
+                                    <h1 class="documentFirstHeading">Comunicação Visual do Evento</h1>
+
+                                    <div id="viewlet-below-content-title">
+
+                                        <div id="viewlet-social-like" class="horizontal">
+                                        
+                                            <div class="sociallike-network-facebook">
+                                                <!-- Facebook -->
+                                                <div class="fb-like fb_iframe_widget" data-href="http://www.secom.gov.br/atuacao/eventos/comunicacao-visual-do-evento" data-send="false" data-action="" data-layout="button_count" data-width="90px" data-show-faces="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;href=http%3A%2F%2Fwww.secom.gov.br%2Fatuacao%2Feventos%2Fcomunicacao-visual-do-evento&amp;layout=button_count&amp;locale=pt_BR&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90">
+                                                    <span style="vertical-align: bottom; width: 84px; height: 20px;">
+                                                        <iframe name="f350f1dbc" width="90px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/plugins/like.php?app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2F6Dg4oLkBbYq.js%3Fversion%3D41%23cb%3Df35bebc42%26domain%3Dwww.secom.gov.br%26origin%3Dhttp%253A%252F%252Fwww.secom.gov.br%252Ff1ca1b3d24%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Fwww.secom.gov.br%2Fatuacao%2Feventos%2Fcomunicacao-visual-do-evento&amp;layout=button_count&amp;locale=pt_BR&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90" style="border: none; visibility: visible; width: 84px; height: 20px;" class="">
+                                                            
+                                                        </iframe>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="sociallike-network-twitter">
+                                            <!-- Twitter -->
+                                                <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.b44aac737ba5fb3711801841c2833c12.pt.html#_=1426182396825&amp;count=horizontal&amp;dnt=false&amp;id=twitter-widget-0&amp;lang=pt&amp;original_referer=http%3A%2F%2Fwww.secom.gov.br%2Fatuacao%2Feventos%2Fcomunicacao-visual-do-evento&amp;size=m&amp;text=Comunica%C3%A7%C3%A3o%20Visual%20do%20Evento&amp;url=http%3A%2F%2Fwww.secom.gov.br%2Fatuacao%2Feventos%2Fcomunicacao-visual-do-evento" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 122px; height: 20px;">
+                                                    
+                                                </iframe>
+                                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><noscript>
+                                                &lt;a href="http://twitter.com/home?status=Comunica%C3%A7%C3%A3o%20Visual%20do%20Evento%20-%20http%3A//www.secom.gov.br/atuacao/eventos/comunicacao-visual-do-evento%20via%20"&gt;Tweet&lt;/a&gt;
+                                                </noscript>
+                                            </div>
+
+                                            <div class="sociallike-network-gplus">
+
+                                                <!-- Google+ -->
+                                                <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px; background: transparent;">
+                                                    <iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1426182396490" name="I0_1426182396490" src="https://apis.google.com/u/0/se/0/_/+1/fastbutton?usegapi=1&amp;annotation=bubble&amp;size=medium&amp;lang=pt-br&amp;origin=http%3A%2F%2Fwww.secom.gov.br&amp;url=http%3A%2F%2Fwww.secom.gov.br%2Fatuacao%2Feventos%2Fcomunicacao-visual-do-evento&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.pt_BR.5SYG-Y9kE6I.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCMyYoS-xn-RntayK1Yii9yT7zWEpA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1426182396490&amp;parent=http%3A%2F%2Fwww.secom.gov.br&amp;pfname=&amp;rpctoken=22458913" data-gapiattached="true" title="+1">
+                                                    </iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <script type="text/javascript">
+                                            jQuery(function () {
+                                                jQuery("div#viewlet-social-like").each(function(){
+                                                    jQuery(this).fadeIn(3000);
+                                                    jQuery(this).removeAttr("style");
+                                                });
+                                            });
+                                        </script>
+
+                                        <div class="documentByLine" id="plone-document-byline">
+
+                                            <span class="documentAuthor"> por <span>Site Secom</span> — </span>
+
+                                            <span class="documentPublished">
+                                                <span>publicado</span> 13/02/2014 11h24, 
+                                            </span>
+
+                                            <span class="documentModified">
+                                                <span>última modificação</span> 19/02/2015 15h41
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                <div id="viewlet-above-content-body"></div>
+                            
+                                <div id="content-core">
+
+                                    <div id="parent-fieldname-text">
+
+                                       <p>A programação visual é um meio de forte apelo comunicativo. Ela apresenta, de forma direta e objetiva, o conteúdo da mensagem que pretende ser transmitida, assim como a instituição promotora da atividade. Todo o material elaborado para a ambientação deve ter o seu conteúdo e formato adequados aos objetivos pré-estabelecidos e ao ambiente onde está inserido. O público e a imprensa devem ter total visibilidade das peças. Para isso, é necessário fazer uma análise criteriosa do ambiente, incluindo estudos de fluxo de público, do local destinado à cerimônia e do posicionamento da imprensa.<span>&nbsp;</span></p>
+                                        <p><b>Utilização da marca na comunicação visual dos eventos:</b></p>
+                                        <p>Todo evento é uma oportunidade para expor uma ou mais marcas do promotor, dos parceiros, patrocinadores, apoiadores, dentre outros. A marca deve estar sempre posicionada em local estratégico e de ampla visibilidade. Ela é a assinatura da instituição que se responsabiliza pelo conteúdo do evento e sua exposição é essencial para "marcar" sua presença institucional, configurando-se como um elemento de paternidade ou compartilhamento da ação tema do evento.&nbsp;</p>
+                                        <p>Os critérios para a utilização da marca do Governo Federal estão no <a title="" href="" class="internal-link" target="_self">Manual de Uso da Marca </a></p>
+                                        <p><b>Peças normalmente utilizadas na programação visual:</b></p>
+                                        <p><b>Fundo de palco</b></p>
+                                        <p>O fundo de palco deve cobrir o fundo do ambiente do palco, a partir do chão ou do início do palco ou tablado, de modo que a parede ou estrutura atrás das autoridades não apareça. Não é recomendada a utilização de cores muito claras e o material deve ser fosco, para evitar reflexos. Ajuste o posicionamento das câmeras e do púlpito para garantir a exposição das marcas e conceitos.</p>
+                                        <p><span>Para melhor visibilidade das marcas, o ideal é que as mesmas estejam dos dois lados do fundo de palco, garantindo sua exposição qualquer que seja a posição do púlpito. Quanto às informações como o nome do evento, conceitos, slogans etc., o ideal é que ocupem a área central do painel. Cada montagem tem uma particularidade e especificidade que deverá ser levada em conta para a obtenção do melhor resultado.<br></span></p>
+                                        <p>&nbsp;</p>
+                                        <p><b>1. Autoridades sentadas em cadeiras / mesa</b></p>
+                                        <p>Quanto à altura, o limite inferior da última marca deve ser entre 1,55m a 1,65m. Na área central, o limite do texto deve ser entre 1,40m, considerando sempre o tipo de estrutura onde o fundo de palco será instalado – boxtruss, estrutura do palco, moldura, painel de madeira etc. – pois isso influenciará a visibilidade.<span>&nbsp;</span></p> 
+
+                                     </div>
+                                </div>
+                            </div>
+
+                            <div id="viewlet-below-content">
+                                <div id="category" class="documentByLine">  registrado em:
+                                    <span>
+                                        <a href="" class="link-category" rel="tag">Eventos</a>
+                                        <span class="separator">,</span>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="link-category" rel="tag">Comunicação Visual</a><span class="separator">,</span>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="link-category" rel="tag">Ambientação</a><span class="separator">,</span>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="link-category" rel="tag">Presidência da República</a>
+                                    </span>
+                                </div>
+
+                                <div id="category-vcge" class="documentByLine">
+                                    Assunto(s):
+                                    <span>
+                                        <a href="#" class="link-category" property="dc:subject foaf:primaryTopic" resource="">Governo federal</a><span class="separator">,</span>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="link-category" property="dc:subject foaf:primaryTopic" resource="">Comunicação</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Column 2-->
+                    </div>
+
+                    <!-- /Demo Plone Content -->
+                </div>
+
+                <div class="clear"></div>
+                <div id="voltar-topo">
+                    <a href="#wrapper">Voltar para o topo</a>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div id="footer" role="contentinfo">
+                <a name="afooter" id="afooter"></a>
+
+               <!--  <div id="doormat-container" class="columns-4">
+                    <div class="doormatColumn column-0">
+                        <dl class="doormatSection">
+                            <dt class="doormatSectionHeader">Atuação</dt>
+                            <dd class="doormatSectionBody">
+                                <a href="#" class="external-link">Comunicação digital</a>
+                            </dd>
+                            <dd class="doormatSectionBody">
+                                <a href="#" class="external-link">Canais</a>
+                            </dd>
+                            <dd class="doormatSectionBody">
+                                <a href="#" class="external-link">Imprensa</a>
+                            </dd>
+                            <dd class="doormatSectionBody">
+                                <a href="#" class="external-link">Internacional</a>
+                            </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Pesquisa</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Eventos</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Patrocínio</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Mídia</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Publicidade</a>
+                            
+                          </dd>
+                        </dl>
+                    </div>
+                    <div class="doormatColumn column-1">
+                    
+                        <dl class="doormatSection"><dt class="doormatSectionHeader">Acesso à Informação</dt>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Institucional</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Ações e programas</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Agendas</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Auditorias</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Convênios</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Despesas</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Licitações e contratos</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Servidores</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Informações classificadas</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Serviço de Informação ao Cidadão – SIC</a>
+                            
+                          </dd>
+                        </dl>
+                    </div>
+                    <div class="doormatColumn column-2">
+                    
+                        <dl class="doormatSection"><dt class="doormatSectionHeader">Serviços</dt>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Perguntas frequentes</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Contato</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Acesso a sistemas</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Relatar erros</a>
+                            
+                          </dd>
+                        </dl>
+                    </div>
+                    <div class="doormatColumn column-3">
+                    
+                        <dl class="doormatSection"><dt class="doormatSectionHeader">Navegação</dt>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Acessibilidade</a>
+                            
+                          </dd>
+                          <dd class="doormatSectionBody">
+                            <a href="#" class="external-link">Mapa do site</a>
+                          </dd>
+                        </dl>
+                     </div>
+                </div> -->
+
+                <div class="menu-footer-container"><ul id="menu-footer-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13"><a href="http://#">Atuação</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="http://3">Comunicação digital</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a href="http://a">Canais</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="http://#">Imprensa</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="http://#">Internacional</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a href="http://#">Pesquisa</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="http://#">Eventos</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20"><a href="http://#">Patrocínio</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21 last-item"><a href="http://#">Mídia</a></li>
+                    </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-23"><a href="http://#">Acesso à informação</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"><a href="http://#">Institucional</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25"><a href="http://#">Ações e Programas</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26"><a href="http://#">Agendas</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="http://#">Auditorias</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a href="http://#">Convênios</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="http://#">Despesas</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30"><a href="http://#">Licitações e contratos</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a href="http://#">Servidores</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32 last-item"><a href="http://#">Serviço de Informação ao Cidadão – SIC</a></li>
+                    </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-33"><a href="http://#">Serviços</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="http://#">Perguntas Frequentes</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-35"><a href="http://#">Contato</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="http://#">Relatar erros</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22 last-item"><a href="http://#">Publicidade</a></li>
+                    </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-38"><a href="http://#">Navegação</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39"><a href="http://#">Acessibilidade</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40 last-item"><a href="http://#">Mapa do site</a></li>
+                    </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41"><a href="http://#">Site</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42 last-item"><a href="http://#">Arquivos</a></li>
+                    </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-43 last-item"><a href="http://#">Página inicial</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36 last-item"><a href="http://##">Acesso a sistemas</a></li>
+                    </ul>
+                    </li>
+                    </ul></div>
+
+                <div class="clear"></div>
+                
+                <div id="footer-brasil" class="footer-logos">
+                    <div id="wrapper-footer-brasil">
+                        <a href="http://www.acessoainformacao.gov.br/"><span class="logo-acesso-footer"></span></a>
+                        <a href="http://www.brasil.gov.br/"><span class="logo-brasil-footer"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="extra-footer">
+                <p>Desenvolvido com o CMS de código aberto <a href="http://wordpress.org/">Wordpress</a></p>
+            </div>
+
+            <!-- /Footer-->
+        </div>
+        <script defer="defer" async="async" src="http://barra.brasil.gov.br/barra.js" type="text/javascript"></script>
+    </body>
+
+</html>
