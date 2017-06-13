@@ -176,7 +176,7 @@ class WpGovWidgetSlides extends WP_Widget
 		$this->path = dirname( __FILE__ ) . '/';
 
 		// register widget
-		$this->WP_Widget( 'widget_slides', 'Slides', array( 'classname' => 'widget-slides', 'description' => __( 'Widget Slides Carousel', 'governo-federal' ) ), array( 'width' => 400 ) );
+		parent::__construct( 'widget_slides', 'Slides', array( 'classname' => 'widget-slides', 'description' => __( 'Widget Slides Carousel', 'governo-federal' ) ), array( 'width' => 400 ) );
 
 		// includes
 	}

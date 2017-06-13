@@ -208,7 +208,7 @@ class WidgetCentraisDeConteudo extends WP_Widget
 		$this->path = dirname( __FILE__ ) . '/';
 
 		// register widget
-		$this->WP_Widget( 'centrais_de_conteudos', 'Centrais de Conteúdo', array( 'classname' => 'widget-centrais-de-conteudo', 'description' => __( 'Widget Centrais de Conteúdos', 'governo-federal' ) ), array( 'width' => 400 ) );
+		parent::__construct( 'centrais_de_conteudos', 'Centrais de Conteúdo', array( 'classname' => 'widget-centrais-de-conteudo', 'description' => __( 'Widget Centrais de Conteúdos', 'governo-federal' ) ), array( 'width' => 400 ) );
 
 		// includes
 	}
