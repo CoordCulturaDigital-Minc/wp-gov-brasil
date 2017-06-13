@@ -102,9 +102,17 @@ class Widget_Custom_Loop extends WP_Widget
 
 				$loop = $instance[ 'loop' ];
 				//$loop = str_replace( '{title}', get_the_title(), $loop );
-				$loop = preg_replace_callback( '/\{title ?(length=[\'\"]([0-9]+)[\'\"])?\}/U', create_function( '$matches', 'return limit_chars( get_the_title(), 80 );' ), $loop );
+				if( function_exists( 'limit_chars' ) )
+				{
+					$loop = preg_replace_callback( '/\{title ?(length=[\'\"]([0-9]+)[\'\"])?\}/U', create_function( '$matches', 'return limit_chars( get_the_title(), 80 );' ), $loop );
+					$loop = preg_replace_callback( '/\{excerpt ?(length=[\'\"]([0-9]+)[\'\"])?\}/U', create_function( '$matches', 'return limit_chars( get_the_excerpt(), 200 );' ), $loop );
+				}
+				else 
+				{
+					$loop = preg_replace_callback( '/\{title ?(length=[\'\"]([0-9]+)[\'\"])?\}/U', create_function( '$matches', 'return substr( get_the_title(), 0, 80 );' ), $loop );
+					$loop = preg_replace_callback( '/\{excerpt ?(length=[\'\"]([0-9]+)[\'\"])?\}/U', create_function( '$matches', 'return substr( get_the_excerpt(), 0, 200 );' ), $loop );
+				}
 				//$loop = str_replace( '{excerpt}', get_the_excerpt(), $loop );
-				$loop = preg_replace_callback( '/\{excerpt ?(length=[\'\"]([0-9]+)[\'\"])?\}/U', create_function( '$matches', 'return limit_chars( get_the_excerpt(), 200 );' ), $loop );
 				$loop = str_replace( '{permalink}', get_permalink(), $loop );
 				$loop = str_replace( '{content}', get_the_content(), $loop );
 				$loop = str_replace( '{author}', get_the_author(), $loop );
@@ -276,8 +284,8 @@ class Widget_Custom_Loop extends WP_Widget
 		parent::__construct( 'custom_loop', 'Custom Loop', array( 'classname' => 'widget_custom_loop', 'description' => __( 'Allow the creation of a custom loop', 'widget-custom-loop' ) ), array( 'width' => 400 ) );
 
 		// includes
-		if( !function_exists( 'limit_chars' ) )
-			include( $this->path . '../inc/limit-chars.php' );
+		/*if( !function_exists( 'limit_chars' ) )
+			include( $this->path . '../inc/limit-chars.php' );*/
 
 		// include_once( ABSPATH . WPINC . '/post-thumbnail-template.php' );
 	}
